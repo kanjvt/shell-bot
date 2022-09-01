@@ -1,33 +1,29 @@
 Shell Bot VPS Ubuntu
 
-Install node.js
+1. Install node.js
 
 ```
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install nodejs
 nodejs --version
 ```
-install node-pty dependencies &  Clone repository
-
+2. install node-pty dependencies &  Clone repository
 ```
 sudo apt install -y make python build-essential
 git clone https://github.com/botgram/shell-bot.git && cd shell-bot
 touch config.json && nano config.json
 ```
-
 `paste with your bot`
-
 ```
 {
     "authToken": "45365477:AAEw8ii-GsVqufGFHDFutgrvncA",
     "owner": 45643756
 }
 ```
-
 ```
 npm install
 ```
-
+3. Install screen for keep alive
 ```
 sudo apt install screen
 screen -S runbottg
