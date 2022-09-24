@@ -3,9 +3,8 @@ Shell Bot VPS Ubuntu
 1. Install node.js
 
 ```
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install nodejs
-nodejs --version
+node --version
 ```
 2. install node-pty dependencies &  Clone repository
 ```
